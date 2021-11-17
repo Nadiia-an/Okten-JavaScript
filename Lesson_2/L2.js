@@ -189,10 +189,6 @@ let name = prompt('Введіть назву');
 
 
 
-
-
-
-
 // __________________________________________________  CLASSWORK ______________________________________________________
 
 
@@ -417,6 +413,6 @@ let b = 5;
 // }
 //
 
-let numbers = 88;
+let numbers = +prompt('Введіть число');
 
-numbers === 0 ? console.log('Number is 0') : numbers > 0 ? console.log('Positive') : console.log('Negative')
+numbers === 0 ? document.write('Number is 0') : numbers > 0 ? document.write('Positive') : document.write('Negative')
