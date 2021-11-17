@@ -363,9 +363,9 @@ if (friends > 3 || friends === 3) {
 //
 
 
-let a = +prompt("Введите первое число:");
-let b = +prompt("Введите второе число:");
-let c = +prompt("Введите третье число:");
+let a = +prompt("Введіть перше число:");
+let b = +prompt("Введіть друге число:");
+let c = +prompt("Введіть третє число:");
 let min, sr,  max;
 
 if (a < b) min = a; else min = b;
