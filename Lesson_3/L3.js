@@ -18,7 +18,7 @@ console.log(numb)
 let str = ['labrador', 'house', 'car', 'book', 'family'];
 console.log(str)
 
-let different = ['guitar', 'rock', 80.8, true, false ];
+let different = ['guitar', 'rock', 80.8, true, false];
 console.log(different)
 
 
@@ -35,15 +35,15 @@ arr [4] = 'Angelina Jolie';
 console.log(arr)
 
 
-                                        // _______________  3  _______________
-
+                                        //_______________  3  _______________
+//
 // - За допомогою циклу for і document.write() вивести 10 блоків div c довільним текстом всередині
 
 for (let i = 0; i < 10; i++) {
 document.write('<div>')
     document.write('Be happy')
-}
 document.write('</div>')
+}
 
 
                                         // _______________  4  _______________
@@ -175,7 +175,7 @@ for ( let i = 0; i < 10; i++ ) {
     console.log('номер кроку' + ' ' + i )
     document.write('<div>')
     document.write('номер кроку' + ' ' + i )
-        document.write('</div>')
+    document.write('</div>')
 }
 
                                         // _______________  15  _______________
@@ -290,13 +290,12 @@ let yourData4 = [2, 17, 13, 6, 22, 31, 45, 66, 100, -18];
 
 let i = 0;
 while (i < 10) {
-    if (i % 2 === 0) {
+    if (yourData4[i] % 2 === 0) {
         console.log(yourData4[i])
         document.write(yourData4[i] + ' ')
     }
         i++
 }
-
                                         // _______________  23  _______________
 
 // 6. перебрати циклом for та вивести  числа тільки парні  значення
@@ -304,7 +303,7 @@ while (i < 10) {
 let yourData5 = [2, 17, 13, 6, 22, 31, 45, 66, 100, -18];
 
 for (let i = 0; i < 10; i++) {
-    if (i % 2 === 0) {
+    if (yourData5[i] % 2 === 0) {
         console.log(yourData5[i])
         document.write(yourData5[i] + ' ')
     }
@@ -422,6 +421,7 @@ for (let i = yourData.length - 1; i >= 0; i--) {
 let i = 100;
 let res = [];
 for(i; i >= 1; i--){
+    if (i % 2 === 0)
     res.unshift(' ' + i--);
 }
 document.write(res)
@@ -431,12 +431,12 @@ document.write(res)
 //     b. заповнити його 50 непарними числами за допомоги циклу.
 
 let i = 100;
-let result1 = [];
+let res1 = [];
 for(i; i >= 1; i--){
     if (i % 2 === 1)
-    result1.unshift(' ' + i--);
+    res1.unshift(' ' + i--);
 }
-document.write(result1)
+document.write(res1)
 
                                         // _______________  29  _______________
 
@@ -501,7 +501,7 @@ let unknown = 0;
 for (let i = 0; i < arr15.length; i++){
         unknown = unknown + arr15[i];
 }
-unknown = +unknown / arr15.length;
+unknown = unknown/arr15.length;
 console.log(unknown);
 
 
@@ -591,4 +591,6 @@ for ( let array14 of arr14 ) {
 
 }
 console.log(newStrThree)
+
+
 
