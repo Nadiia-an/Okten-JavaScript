@@ -68,7 +68,8 @@ function paragraphWithText (text) {
     document.write(`<p>${text}</p>`)
 }
 
-paragraphWithText('His words and music made a profound impact, beginning in the 1950s with his lyrics for “West Side Story” and continuing with his scores for “A Funny Thing Happened on the Way to the Forum” and others.')
+paragraphWithText('His words and music made a profound impact, beginning in the 1950s with his lyrics for “West ' +
+    'Side Story” and continuing with his scores for “A Funny Thing Happened on the Way to the Forum” and others.')
 
 
                                         // _______________  6  _______________
@@ -89,7 +90,8 @@ function names (name) {
                                         // _______________  7  _______________
 
 
-// - створити функцію яка створює ul з трьома елементами li. Текст li задати через аргумент всім однаковий. Кількість li визначається другим аргументом, який є числовим (тут використовувати цикл)
+// - створити функцію яка створює ul з трьома елементами li. Текст li задати через аргумент всім однаковий.
+// Кількість liвизначається другим аргументом, який є числовим (тут використовувати цикл)
 
 function banalName (a, b) {
     document.write(`<ul>`);
@@ -124,7 +126,8 @@ movieTitle(films)
                                         // _______________  9  _______________
 
 
-// - створити функцію яка приймає масив об'єктів з наступними полями id,name,age , та виводить їх в документ. Для кожного об'єкту окремий блок.
+// - створити функцію яка приймає масив об'єктів з наступними полями id,name,age , та виводить їх в документ.
+// Для кожного об'єкту окремий блок.
 
 let arrayOfObjects = [{id: 1, name: 'Hnat', age: 45},
                       {id: 2, name: 'Makar', age: 28},
@@ -252,7 +255,8 @@ document.write(sumator2(numbers))
                                         // _______________  16  _______________
 
 
-// - створити функцію яка приймає будь-яку кількість чисел, повертає найменьше, а виводить найбільше (Math використовувати заборонено);
+// - створити функцію яка приймає будь-яку кількість чисел, повертає найменьше, а виводить найбільше
+// (Math використовувати заборонено);
 
 function minMax(a) {
     let min = arguments[0];
@@ -290,7 +294,8 @@ document.write(randNumbers(10))
                                         // _______________  18  _______________
 
 
-// - створити функцію яка заповнює масив рандомними числами в діапазоні від 0 до limit. limit - аргумент, який характеризує кінцеве значення діапазону.
+// - створити функцію яка заповнює масив рандомними числами в діапазоні від 0 до limit. limit - аргумент, який
+// характеризує кінцеве значення діапазону.
 
 function numbers(length,limit) {
     let emptyArr = [];
