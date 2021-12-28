@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Lesson_10</title>
+
+    <style>
+        .dropbtn{
+            width: 280px;
+            background-color: #5f5462;
+            color: #ffffff;
+            padding: 16px;
+            font-size: 16px;
+            border: none;
+            cursor: pointer;
+            border-radius: 10px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #eec3c3;
+            border-radius: 10px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        }
+
+        .dropdown-content li {
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+        }
+
+        .show {display:block;}
+
+
+        .hide {
+            height: 0;
+            overflow: hidden;
+
+        }
+
+        .body-coment {
+            transition: 1s;
+            height: 20px;
+            background-color: #5f5462;
+            color: white;
+        }
+
+        .hide-body {
+            height: 0;
+            overflow: hidden;
+            background-color: #5f5462;
+        }
+    </style>
+
+</head>
+<body>
+
+<input type="button" id="hider" value="Приховати текст">
+
+<div id="text">Карпати — один з головних вододілів Європи між Балтійським і Чорним морем. Поділяються на дві субпровінції — Зовнішні Карпати (Західні[en] та Східні) і Внутрішні Карпати (Західні[en] та Східні). Орографічно виділяють Західні Карпати (територія Австрії, Чехії, Словаччини, Польщі та України — найвищі гірські масиви), Східні, або Лісисті, Карпати (найбільш знижена і звужена частина Карпат; Східні Карпати складаються зі Східних Бескидів (територія Польщі, Словаччини, України), Українських Карпат (Україна) і Молдово-Семиградських Карпат (Румунія), Південні Карпати, або Трансильванські Альпи (територія Румунії).</div>
+
+
+<button id="button">Натисни і побачиш диво;)</button>
+
+<form name="Confirm">
+    <input type="number" name="age">
+    <button>Confirm</button>
+</form>
+
+
+<div class="dropbtn">
+    <button onclick="myFunction()" class="dropbtn">Відкрити новорічне меню:)</button>
+    <div id="myDropdown" class="dropdown-content">
+          <ul>
+            <li>Шампанське</li>
+            <li>Олів'є</li>
+            <li>Бутерброди з ікрою</li>
+            <li>Фрукти</li>
+            <li>Гарна музика</li>
+        </ul>
+</div>
+
+    <script src="L10hw.js"></script>
+
+</body>
+</html>
